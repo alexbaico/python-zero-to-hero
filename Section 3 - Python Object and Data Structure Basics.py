@@ -90,3 +90,69 @@ None #-> none object
 
 num_list.reverse()
 num_list #[5, 1, 4, 7, 3] -> la da vuelta
+
+
+
+# Dictionaries
+
+a_dict = { 'key1': 'value1', 'key2' : 2 }
+a_dict #{'key1': 'value1', 'key2': 2}
+
+a_dict['key2'] # 2
+
+a_dict2 = {'k1': 23.4, 'k2': [1,2,3], 'k3': {'k1':123, 'k2': 'asd', 999 : 2}}
+a_dict2['k3'][999] #2 --- keys can be numbers too =O
+a_dict2['k3'] #{'k1': 123, 'k2': 'asd', 999: 2}
+a_dict2['k3']['k2'].upper() # 'ASD'
+
+
+
+#Tuples - they are immutable
+
+t = (1,2,3)
+list = [1,2,3]
+
+type(t) # <class 'tuple'>
+type(list) # <class 'list'>
+
+t = ('one', 2, 3.4)
+
+t[-1] # 3.4
+t[1] # 2
+
+t = ('a', 'a', 'b')
+
+t.count('a') # 2
+t.index('b') # 2
+t.index('a') # 0
+
+list[0] = 'NEW' # ok
+t[0] = 'c' # error
+
+
+
+# Sets
+
+myset = set()
+myset.add(1)
+myset # {1}
+
+myset.add('2')
+myset.add(2)
+myset.add(2)
+
+myset # {1, 2 , '2'}
+
+mylist = [1, 1, 1, 1, 2, 2, 2]
+myset = set(mylist)
+
+myset # {1, 2}
+
+
+# Booleans
+
+True
+False
+true # error
+
+b = None # el nullllll de piton
